@@ -43,6 +43,7 @@ const config = {
     ],
   },
   optimization: {
+    minimize: mode === 'production',
     minimizer: [
       new TerserPlugin(),
       new CssMinimizerPlugin(),
